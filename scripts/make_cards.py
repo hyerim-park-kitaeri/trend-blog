@@ -14,6 +14,8 @@ W = 900
 PALETTES = {
     "blue": {"bg": "#FFFFFF", "accent": "#2F5DFF", "accent_dark": "#1A3FCC", "text": "#1B1F2B", "sub": "#5B6472", "line": "#E4E8F0", "badge_bg": "#2F5DFF", "badge_fg": "#FFFFFF"},
     "rose": {"bg": "#FFFFFF", "accent": "#D6336C", "accent_dark": "#A61E4D", "text": "#1B1F2B", "sub": "#5B6472", "line": "#F2E1E8", "badge_bg": "#D6336C", "badge_fg": "#FFFFFF"},
+    "teal": {"bg": "#FFFFFF", "accent": "#0E9384", "accent_dark": "#0A6E63", "text": "#1B1F2B", "sub": "#5B6472", "line": "#DFF1EE", "badge_bg": "#0E9384", "badge_fg": "#FFFFFF"},
+    "amber": {"bg": "#FFFFFF", "accent": "#C2760C", "accent_dark": "#8F5608", "text": "#1B1F2B", "sub": "#5B6472", "line": "#F5E6D0", "badge_bg": "#C2760C", "badge_fg": "#FFFFFF"},
 }
 
 def font(path, size):
