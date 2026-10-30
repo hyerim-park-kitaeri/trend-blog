@@ -1,12 +1,17 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """Generate cover / summary / table card PNGs for trend-blog posts using Pillow."""
+import os
 import textwrap
 from PIL import Image, ImageDraw, ImageFont
 
-FONT_DIR = "/usr/share/fonts/opentype/noto"
-SANS_REG = f"{FONT_DIR}/NotoSansCJK-Regular.ttc"
-SANS_BOLD = f"{FONT_DIR}/NotoSansCJK-Bold.ttc"
+FONT_DIR = "/usr/share/fonts/truetype/nanum"
+SANS_REG = f"{FONT_DIR}/NanumGothic.ttf"
+SANS_BOLD = f"{FONT_DIR}/NanumGothicBold.ttf"
+if not os.path.exists(SANS_REG):
+    FONT_DIR = "/usr/share/fonts/opentype/noto"
+    SANS_REG = f"{FONT_DIR}/NotoSansCJK-Regular.ttc"
+    SANS_BOLD = f"{FONT_DIR}/NotoSansCJK-Bold.ttc"
 
 W = 900
 
